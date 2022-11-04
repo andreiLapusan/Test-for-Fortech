@@ -1,0 +1,29 @@
+First n Fibonacci numbers
+
+Sirul lui Fibonacci este un sir de elemente in care oricare element este compus din suma celor doua precedente. Acest sir are ca prime  doua elemente 0 si 1.
+Ex: 0 1 1 2 3 5 8 13 21 34 55 89 etc
+    2 -> 1 + 1
+    3 -> 1 + 2 etc.
+
+Pentru rezolvarea acestui exercitiu, am ales sa folosesc doua metode, si anume metoda recursiva si metoda iterativa.
+
+In cazul abordarii iterative, am creat o metoda iterativeFibonacci() de tip "void" in care am declarat 3 variabile de tip int: int num1, int num2 si int counter.
+Dat fiind faptul ca ca primele doua elemente din sirul lui Fibonacci sunt 0 si 1, acestea au fost atribuite variabilelor int num1 respectiv int num2.
+Urmatorul pas a fost sa printez primele doua numere, iar apoi, folosindu-ma de structura repetitiva "while", am obtinut urmatorul numar (int num3) prin adunarea celor
+doua numere precedente. Dupa care i-am atribuit primului numar valoarea celui de-al doilea, iar celui de-al doilea i-am atribuit valoarea celui de-al treilea, 
+pentru ca la urmatoarea iteratie, num1 si num2 sa fie valorile corecte precedente pentru num3.
+Urmatorul pas a fost sa creez o functie main, in care am declarat o noua variabila de tip int careia am ales sa ii atribui valoarea 10 pentru a-mi afisa primele 10 numere
+din sirul lui Fibonacci.
+
+
+Pentru aborarea recursiva, am creat o metoda de tip "int" numita recursiveFibonacci(). Motivul pentru care am declarat-o de tip "int" este deoarece apelul metodei recursive
+returneaza o valoare de tip int care se va insuma la valorile returnate de apelurile functiei pe "callstack".
+Conitiile setate pentru a returna o valoare intreaga ce se poate insuma pentru a obtine un rezultat de tip "int", sunt urmatoarele:
+Prima conditie spune ca daca variabila n este egala cu 0, atunci se returneaza 0.
+O alta conditie este ca atunci cand variabila n este egala cu 1, atunci se returneaza 1.
+Daca aceste doua conditii nu sunt indeplinite, atunci se returneaza suma urmatoarelor doua numere precedente din sir, 
+pana cand valoarea calculata a lui n este una dintre cele doua conditii de baza (n = 0 sau n = 1).
+Urmatorul pas a fost sa creez functia main unde i-am atribuit variabilei n valoarea 10, astfel incat se vor afisa primele 10 numere din sirul lui Fibonacci.
+
+
+
